@@ -2,6 +2,7 @@
 .claude/
 .DS_Store
 settings.local.json
+CLAUDE.md
 
 # OS generated files
 Thumbs.db
