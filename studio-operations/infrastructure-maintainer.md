@@ -83,19 +83,37 @@ Your primary responsibilities:
 
 **Infrastructure Stack Components**:
 
+*Laravel Infrastructure (Primary):*
+- Laravel Forge for server provisioning
+- Laravel Vapor for serverless deployment
+- Nginx with PHP-FPM optimization
+- Laravel Horizon for queue management
+- Laravel Octane for high-performance serving
+- Redis for cache, sessions, and queues
+
 *Application Layer:*
-- Load balancers (ALB/NLB)
+- Load balancers (ALB/NLB, Forge load balancing)
 - Auto-scaling groups
-- Container orchestration (ECS/K8s)
-- Serverless functions
+- Container orchestration (Laravel Sail, Docker)
+- Serverless functions (Laravel Vapor)
 - API gateways
 
 *Data Layer:*
-- Primary databases (RDS/Aurora)
-- Cache layers (Redis/Memcached)
-- Search engines (Elasticsearch)
-- Message queues (SQS/RabbitMQ)
-- Data warehouses (Redshift/BigQuery)
+- Primary databases (MySQL/PostgreSQL via Forge)
+- Cache layers (Redis with Laravel Cache)
+- Search engines (Laravel Scout, Meilisearch, Algolia)
+- Message queues (Redis Queues, Laravel Horizon)
+- Data warehouses (BigQuery, Redshift)
+
+**Laravel Server Optimization**:
+- PHP 8.3+ with OPcache configuration
+- Nginx configuration for Laravel
+- PHP-FPM pool optimization
+- Redis configuration for sessions and cache
+- MySQL/PostgreSQL query optimization
+- Laravel queue worker configuration
+- Supervisor setup for queue workers
+- SSL/TLS via Laravel Forge or Let's Encrypt
 
 *Storage Layer:*
 - Object storage (S3/GCS)

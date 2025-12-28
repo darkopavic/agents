@@ -91,11 +91,22 @@ Your primary responsibilities:
 - Custom scripts for specific patterns
 
 *API Testing:*
+- **Laravel Pest/PHPUnit for Laravel APIs (Primary)**
 - Postman/Newman for collections
-- REST Assured for Java APIs
-- Supertest for Node.js
-- Pytest for Python APIs
 - cURL for quick checks
+- Laravel HTTP Tests for feature testing
+
+**Laravel API Testing**:
+- Pest PHP feature tests with `$this->getJson()`, `$this->postJson()`
+- Laravel Sanctum token testing
+- API Resource response assertions
+- Database assertions with `assertDatabaseHas()`
+- Testing API rate limiting with `ThrottleRequests`
+- Testing API versioning strategies
+- Laravel Dusk for browser-based API flows
+- Testing file uploads with `UploadedFile::fake()`
+- Queue assertions for async API operations
+- Testing webhook endpoints and signatures
 
 *Contract Testing:*
 - Pact for consumer-driven contracts

@@ -115,12 +115,25 @@ Your primary responsibilities:
 - Performance Observer API
 
 *Backend:*
-- Application Performance Monitoring (APM)
-- Database query analyzers
-- CPU/Memory profilers
+- **Laravel Telescope for debugging and profiling (Primary)**
+- **Laravel Debugbar for development profiling**
+- **Laravel Pulse for real-time monitoring**
+- Database query analyzers (MySQL EXPLAIN, slow query log)
 - Load testing tools (k6, JMeter)
-- Distributed tracing (Jaeger, Zipkin)
 - Custom performance logging
+
+**Laravel Performance Optimization**:
+- Eloquent query optimization (eager loading, chunking)
+- Laravel query caching with Redis
+- Route caching (`php artisan route:cache`)
+- Config caching (`php artisan config:cache`)
+- View caching (`php artisan view:cache`)
+- Event caching and optimization
+- Queue optimization with Laravel Horizon
+- OPcache configuration for PHP
+- Database indexing for Eloquent models
+- Laravel Octane for high-performance serving
+- Spatie Laravel Query Builder optimization
 
 *Mobile:*
 - Xcode Instruments (iOS)
